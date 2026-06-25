@@ -1,285 +1,303 @@
-[Google Ads Scraper](https://apify.com/scraper-engine/google-ads-scraper?fpr=data)
+[Google Ads Scraper](https://apify.com/lexis-solutions/google-ads-scraper?fpr=data)
 
-## 🚀 What Does a Google Ads Scraper Do?
+# Google Ads Scraper
 
-A Google Ads Scraper 🕵️‍♂️ is a powerful automation tool that extracts advertising data from Google Ads, the Google Ads Transparency Center, and the Google Ad Library. It gathers ad creatives, keywords, spend insights, targeting details, and more—helping marketers, researchers, and businesses make smarter decisions.
+![banner](https://images.apifyusercontent.com/fVv9CPTnW-sVY2MEPnsTB1XK8R8ujw9RTEBh1eHeTM0/w:1800/cb:1/aHR0cHM6Ly9sZXhpcy1zb2x1dGlvbnMtYXBpZnkuZnJhMS5jZG4uZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9nb29nbGUtYWRzL2JnLnN2Zw.webp)
 
-Using a Google Ads Scraper API or platforms like Google Ads Scraper Apify, you can pull structured ad intelligence in seconds. This saves hours of manual research and unlocks competitive insights at scale.
+## What is the Google Ads Scraper?
 
-From analyzing your competitor’s campaigns to discovering keyword trends and investigating policy compliance, a scraper boosts your SEO and marketing strategy. It’s also useful for research workflows such as analyzing Google Ads Transparency Center data, a common topic across GitHub repositories like google ads scraper github or google ads transparency scraper github.
+The Google Ads Scraper is designed to extract data from Google's Ads Transparency Center. It enables users to gather information about ads displayed on Google's advertising network, focusing on transparency and the details of advertisers. Users can search Google ads by company, domain, or country, and filter ads by date range and format.
 
----
+🆕 This actor now scrapes all formats of ads on Google Ads - images, videos, and text.
 
-## 🛠️ Support and Feedback
+- 🎥 Watch the [video tutorial](https://www.youtube.com/watch?v=nK_x32d-bcU) on Scraping Google Ads with this actor
 
-- 🐞 **Bug reports:** Open a ticket in the repository **Issues** section
-- ✨ **Custom solutions or feature requests:** Contact our team 📧 **Email:** [dev.scraperengine@gmail.com](mailto:dev.scraperengine@gmail.com)
+## 🔄 Comparison: Lexis vs Competitor
 
-## 📊 What Google Ads Scraper Can I Extract?
+| Feature | Competitor | Lexis Scraper |
+| --- | --- | --- |
+| Avg Speed (100 ads) | 81s | **39s** 🚀 |
+| Ad formats | Text, Image, Video | Text, Image, Video |
+| Media download | ✅ | ✅ |
+| `url` (full ad link) | ❌ | ✅ |
+| `firstShownAt` (first launch date) | ❌ | ✅ |
+| `audienceSelections` (target audience) | ❌ | ✅ |
+| Age-restricted ads | ❌ | ✅ |
+| Reliability | Occasional gaps | **Error-free runs** ✅ |
 
-Below is a clean, visual table outlining the main data points you can extract using a Google Ads Scraper 🔍:
+# Features
 
-| Data Type Extracted | Description |
-| --- | --- |
-| Ad Headlines | Primary message used in the Google ad |
-| Ad Descriptions | Supporting ad copy |
-| Display URL | Visible URL shown in the ad |
-| Final URL | Landing page destination |
-| Keywords | Search terms associated with ads |
-| Advertiser Info | Brand, ID, domain, or profile |
-| Transparency Data | Info from Google Ads Transparency Center |
-| Ad Creatives | Images, text, videos |
-| Impressions / Metrics | Visibility insights when available |
-| Ad Run Dates | Start, end, and active status |
-| Location Targeting | Countries/regions targeted by the advertiser |
+- ⚡ 2× faster than competitor scrapers – scrape 100 ads in just 39 seconds
+- Scrapes all ad formats: TEXT, IMAGE, and VIDEO
+- Extracts variants with decoded ad text and media links
+- Per-country impression ranges and per-platform impression stats
+- Audience selections with include/exclude flags
+- Optional media downloading to Key-Value Store with stored keys in output
+- Cookie support to unlock restricted content
+- Proxy support for geo-targeted results
+- Supports both search URLs and direct creative detail URLs
+- Pagination with `maxItems` control
 
----
+✨ Exclusive fields you won’t find in competitor scrapers:
 
-### ⭐ Key Features of Google Ads Scraper
+- url → full ad link
+- firstShownAt → when the ad was first launched
+- audienceSelections → target audience info
 
-Here are the most powerful features that make the Google Ads Scraper an essential tool for marketers, researchers, and ad analysts:
+## What data can the Google Ads Scraper extract?
 
-- 🔍 Transparency Center Scraping
+The Google Ads Scraper can extract the following data from the Ads Transparency Center:
 
-Pull rich data from the Google Ads Transparency Center, including ad details, advertiser identity, impression ranges, policies, and more.
-- 📚 Google Ads Library Scraper Capabilities
+- Advertiser name
+- Advertiser ID
+- Creative ID (Ad ID)
+- Format (TEXT, IMAGE, VIDEO)
+- Detail URL
+- Preview URL (primary media link)
+- First shown date
+- Last shown date
+- Impressions (range, if available)
+- Shown countries
+- Country stats (per country first/last shown, impression bounds)
+- Platform stats per country (YouTube, Shopping, Search, with impression bounds)
+- Audience selections (targeting categories; included/excluded flags)
+- Variants (extracted ad text and media/video/image links)
+- Origin URL (the source Transparency Center search URL)
 
-This scraper acts as a complete Google Ads Library Scraper, delivering searchable ad archives with structured output.
-- ⚡ Bulk Extraction at Scale
+## What use cases does the Google Ads Scraper have?
 
-Whether you need 10 ads or 100,000 ads, the scraper handles large datasets effortlessly—ideal for agencies and research teams.
-- 🔗 Integrations & API Support
+- 👀 Competitive analysis
+- 💻 Market research
+- 📊 Data journalism
+- 📈 Marketing agencies tracking competitor ads
+- 🎨 Creative teams analyzing ad media & formats
+- 🕵️‍♂️ Compliance teams monitoring ad transparency
 
-Works seamlessly with automation tools and supports use cases similar to google ads scraper api or scrape google ads python scripts.
-- 🎨 Creative & Asset Data Extraction
+## How to use the Google Ads Scraper
 
-Extract images, video metadata, display URLs, and copy—perfect for competitor analysis.
-- 🛡️ Reliable & Consistent
+1. Create a free Apify account
+2. Open Google Ads Scraper
+3. Add one or more Google Transparency Center URLs to the input
+4. Click Start and wait for the results
+5. Download the results in JSON, XML or CSV format or connect the actor to your backend via API
 
-Built to avoid errors and deliver stable results. Perfect for marketers checking how many keywords per ad group Google Ads or comparing campaign structures.
-- 📥 Easy Export
+## ⚠️ Note on Ad Visibility
 
-Download results in JSON, CSV, or your preferred format—similar to google ads transparency data exporter tools.
+The number of ads retrieved depends on two key factors:
 
-##🔗 What are other Google scraping tools?
+- ✅ **Authentication** – Use cookies from a logged-in Google account (preferably a test account) to access age-restricted or personalized ads. Never share your cookies to protect your privacy.
+- 🌍 **Location (IP-based)** – Google shows different ads based on your region. To fetch ads from a specific country, use a proxy for that region.
 
-If you want to scrape specific Google data, you can use any of the dedicated scrapers below for faster and more targeted results.
-
-Just enter keywords, search queries, place names, app links, or URLs and start scraping instantly.
-
-| [🖼️ Google Images Scraper](https://apify.com/scraper-engine/google-images-scraper) | [⌨️ Google Search Autocomplete API](https://apify.com/scraper-engine/google-search-autocomplete-api) |
-| --- | --- |
-| [📰 Google News Scraper](https://apify.com/scraper-engine/google-news-scraper) | [✈️ Google Flights Scraper](https://apify.com/scraper-engine/google-flights-scraper) |
-| [🏨 Google Hotels Scraper](https://apify.com/scraper-engine/google-hotels-scraper) | [📈 Google Trends Scraper](https://apify.com/scraper-engine/google-trends-scraper) |
-| [📱 Google Play Data Extractor](https://apify.com/scraper-engine/google-play-scraper) | [⭐ Google Play Store Reviews Scraper](https://apify.com/scraper-engine/google-play-store-reviews-scraper) |
-| [🗺️ Google Maps Reviews Scraper](https://apify.com/scraper-engine/google-maps-reviews-scraper) | [📧 Google Play Email Scraper](https://apify.com/scraper-engine/google-play-email-scraper) |
-| [📍 Google Maps Extractor](https://apify.com/scraper-engine/google-maps-extractor) | [🧭 Google Maps Scraper](https://apify.com/scraper-engine/google-maps-scraper) |
-| [📧 Google Maps Email Scraper](https://apify.com/scraper-engine/google-maps-email-scraper) | [📱 Google Play Store App Search Scraper](https://apify.com/scraper-engine/google-play-store-app-search-scraper) |
-| [📨 Google Maps Email Extractor](https://apify.com/scraper-engine/google-maps-email-extractor) | [📞 Google Maps Phone Number Extractor](https://apify.com/scraper-engine/google-maps-phone-number-extractor) |
-| [☎️ Google Play Phone Number Scraper](https://apify.com/scraper-engine/google-play-phone-number-scraper) | [📞 Google Maps Phone Number Scraper](https://apify.com/scraper-engine/google-maps-phone-number-scraper) |
-
-## 🧭 How to Use Google Ads Scraper
-
-Follow this simple step-by-step guide to run your Google Ads Scraper efficiently 👇:
-
-### 🟦 Step-by-Step Guide
-
-1. Log in to Apify
-
-Create a free account or sign in to get started.
-2. Select the Actor
-
-Search for “Google Ads Scraper” or similar tools like google ads scraper apify in the Apify Store.
-3. Enter Input Data
-
-Paste any advertiser URL, ad page URL, or entity ID into the startUrls field.
-
-You can use multiple URLs for bulk scraping.
-4. Choose Options
-
-Select settings such as:
-
-- Extract transparency data
-- Include ad creatives
-- Include Google Ad Library records
-- Decide between minimal output or rich metadata
-
-1. Run the Actor
-
-Click Start and the scraper automatically processes the Google Ads pages.
-2. Download Results
-
-Export results in JSON or CSV and integrate with your workflows.
-
-This workflow works perfectly whether you're using the online interface, an API integration, or referencing repositories like silva95gustavo/google-ads-scraper, google ads scraper download, or google ads scraper github.
-
----
-
-## 🎯 Use Cases
-
-The Google Ads Scraper is incredibly valuable across many industries. Here’s how people use it daily:
-
-- 🏢 Competitor Research
-
-Analyze what competitors are running on Google Ads. Understand copy, creative style, keywords, and spend behavior.
-- 📊 Marketing & SEO Strategy
-
-Optimize campaigns by studying industry ad trends, relevance scores, and creative patterns. Helps answer questions like “is Google Ads profitable?”
-- 📚 Academic & Policy Research
-
-Extract transparency data for journalistic reports or political communication analysis using tools similar to a google ads transparency center scraper.
-- 🤖 Automation & Data Pipelines
-
-Integrate with APIs to feed real-time ad intelligence into dashboards and BI tools.
-- 📈 Agency Reporting
-
-Build competitive reports, visualize market share, or compare ad libraries across industries.
-- 🕵️ Brand Monitoring
-
-See if unauthorized ads or misleading impersonations are running against your brand keywords.
-
----
-
-## 💎 Why Choose Us?
-
-Choosing our Google Ads Scraper means you get unmatched precision, reliability, and performance. Here's why users trust us:
-
-- 🔥 Industry-Leading Accuracy
-
-Our scraper captures comprehensive ad details from multiple Google Ads environments, including transparency data.
-- ⚙️ Engineered for Scale
-
-The system handles large datasets, making it ideal for enterprise teams that require consistent, high-volume scraping.
-- 🧠 Insight-Driven Output
-
-Data is structured and clean, helping marketing teams create actionable insights—not clutter.
-- 🌐 Versatile & Flexible
-
-Supports URLs from Google Ads Transparency Center, advertiser pages, ad libraries, and more.
-- 🔌 Easy Integrations
-
-Works perfectly with APIs, automation workflows, and data pipelines.
-- 💼 Trusted by Marketers, Researchers & Agencies
-
-Perfect for those comparing google*ads charge, charge for google ads, or analyzing historical ad performance.
-
----
-
-## 📈 How Many Results Can You Scrape With “Google Ads Scraper”?
-
-Scalability is one of the core strengths of our Google Ads Scraper 💪. Unlike small browser extensions or scripts like facebook ads scraper extension or basic scrape google ads python snippets, this scraper is built for high-volume, enterprise-grade extraction.
-
-You can scrape:
-
-- Hundreds of ads from a single advertiser
-- Thousands of ads across a country or category
-- Tens of thousands of ads across political, commercial, and brand verticals
-- Entire Google Ads Transparency Center datasets
-- Full advertiser libraries from the Google Ad Library
-
-Because the scraper supports parallelization and efficient queueing, performance is stable even when processing large lists of URLs.
-
-### ⚡ How It Handles Large Jobs
-
-- Distributed architecture for scaling
-- Automatic retries to maintain clean results
-- Smart limits prevent errors while supporting big workloads
-
-Whether you're scraping one brand or running a global research project, the Google Ads Scraper delivers the volume and reliability required.
-
----
-
-## ⚖️ Is It Legal to Scrape “Google Ads”?
-
-Scraping Google Ads or using a Google Ads Transparency Center Scraper exists in a gray area, depending on jurisdiction and purpose.
-
-Here’s the general rule 👍:
-
-- ✔ Allowed:
-- Public data scraping for research, analysis, compliance, journalism
-- Gathering transparency information already publicly accessible
-- Non-intrusive scraping respecting platform rules
-- ❌ Not Allowed:
-- Bypassing authentication
-- Scraping private, personal, or restricted data
-- Misusing scraped data for deceptive practices
-
-Always follow:
-
-- Google Terms of Service
-- Data protection regulations (GDPR, CCPA)
-- Ethical research guidelines
-
-Using the tool responsibly—especially for transparency research, competitive insights, or market analysis—is typically permitted.
-
----
-
-## 🛠️ Input Parameters
-
-### JSON Example
+Example proxy config for US:
 
 ```
 {
- "query": "home decor ideas",
- "maxResults": 10,
- "use_prefix": true,
- "use_suffix": true
+  "proxyConfiguration": {
+    "useApifyProxy": true,
+    "apifyProxyGroups": ["US"]
+  }
 }
 ```
 
-## 📤 Output Format
+> Here is how you can integrate your cookies:
+> 
+> 
+> 
+> 
+> 1. Install the [**Cookie-Editor** Chrome extension](https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm?pli=1).
+> 2. Go to [Google Ads Transparency Center](https://adstransparency.google.com).
+> 3. Open the **Cookie-Editor** extension and **export your cookies** in **JSON format**.
+> 4. Copy the exported cookie data and **paste it into the input field** provided here.
+> ![Example 1](https://images.apifyusercontent.com/fdIxoUAB1IYnNKoAuSzU5B3HQgqpzxgmpWyi4br7LOc/w:1800/cb:1/aHR0cHM6Ly9pLmliYi5jby9xTEJGM21Cay9jb29raWVzLTEucG5n.webp) ![Example 2](https://images.apifyusercontent.com/w2rsP9xPyqubac0nDC7vFbpZmqtXu1Q0AiTWFNypc94/w:1800/cb:1/aHR0cHM6Ly9pLmliYi5jby81eHJ6WEw5Ui9jb29raWVzLTIucG5n.webp) ![Example 3](https://images.apifyusercontent.com/q5ifGwXhQjy3FqAcuSxvCTynOiiNFWKhG7ZtJtzlJjA/w:1800/cb:1/aHR0cHM6Ly9pLmliYi5jby9MZDVGQ05TTS9jb29raWVzLTMucG5n.webp)
 
-### JSON Example
+## 📥 Input
+
+To run the actor, you'll need at least one Google Transparency Center URL.
+
+Opening the [Google Transparency Center](https://adstransparency.google.com/) in your browser, you can see a search form like below.
+
+![banner](https://images.apifyusercontent.com/exgy-WEEwXf_6Jas9UdhKizDfQDoVCVZ2yCipFpwVLY/w:1800/cb:1/aHR0cHM6Ly9sZXhpcy1zb2x1dGlvbnMtYXBpZnkuZnJhMS5jZG4uZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9nb29nbGUtYWRzL2Zvcm0ucG5n.webp)
+
+Here you can use the search form to filter the ads by:
+
+1. Dates - the date range when the ad was shown
+2. Countries - the countries where the ad was shown
+3. Format - the format of the ad (text, image, video)
+4. Advertiser - the name of the advertiser, or the domain of the advertiser's website
+
+Once you've set up the search form, click enter, and the URL in your browser will change. Copy this URL and paste it into the input field in the actor.
+
+Sample URLs you can use:
+
+- [https://adstransparency.google.com/advertiser/AR09717407487665111041?region=anywhere](https://adstransparency.google.com/advertiser/AR09717407487665111041?region=anywhere) - all ads from the advertiser "Facebook Technologies LLC", shown anywhere in the world, in any format, in any date range
+- [https://adstransparency.google.com/advertiser/AR09717407487665111041?region=DE&preset-date=Last+7+days&format=TEXT](https://adstransparency.google.com/advertiser/AR09717407487665111041?region=DE&preset-date=Last+7+days&format=TEXT) - all text ads from the advertiser "Facebook Technologies LLC", shown in Germany, in the last 7 days
+- [https://adstransparency.google.com/?region=anywhere&domain=facebook.com](https://adstransparency.google.com/?region=anywhere&domain=facebook.com) - all ads from Facebook domain
+
+### 📥 Sample Input
 
 ```
-[
-  {
-    "query": "home decor ideas",
-    "suggestions": [
-      "best home decor ideas",
-      "home decor ideas 2023",
-      "home decor ideas on a budget",
-      "home decor ideas for small spaces",
-      "home decor ideas diy"
-    ]
-  }, ....
-]
+{
+  "startUrls": [
+    {
+      "url": "https://adstransparency.google.com/advertiser/AR07117872862404280321?region=US&start-date=2025-05-22&end-date=2025-05-22"
+    }
+  ],
+  "cookies": [], // (NOT REQUIRED) used to retreive more data (age-restriction content)
+  "maxItems": 40,
+  "downloadMedia": false,
+  "proxyConfiguration": { "useApifyProxy": true }
+}
 ```
 
-## ❓ FAQ
+## 📥 Input schema
 
-### 1. Is the Google Ads Scraper safe to use?
+- startUrls (array of { url: string }) – required
+- cookies (array) – optional; JSON from Cookie-Editor
+- maxItems (integer) – optional; default 100
+- proxyConfiguration (object) – optional; Apify proxy settings
+- downloadMedia (boolean) – optional; default false. When true, media is downloaded to KV Store and keys are returned in `media-store`
 
-Yes, when used ethically and within legal guidelines.
+## 📤 Output
 
-### 2. Can I scrape Google Ads without coding?
+The results are stored in the default dataset associated with the actor. Each item is an ad, having the following format:
 
-Absolutely—tools like Google Ads Scraper Apify let you scrape with zero coding.
+```
+{
+  "id": "CR08100116008800354305",
+  "advertiserId": "AR10303883279069085697",
+  "creativeId": "CR08100116008800354305",
+  "advertiserName": "My Jewellery B.V",
+  "format": "IMAGE",
+  "url": "https://adstransparency.google.com/advertiser/AR10303883279069085697/creative/CR08100116008800354305?region=DE&platform=YOUTUBE&start-date=2022-01-01&end-date=2024-12-31&format=IMAGE",
+  "previewUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT5cZ5keol3Qh0OGy8BxONGNpoc9OeRl771pz5cN4FnyOwhmGU",
+  "previewStoreKey": "CR08100116008800354305_preview_0.jpg",
+  "firstShownAt": "1710421161",
+  "lastShownAt": "1758540064",
+  "impressions": "600000",
+  "shownCountries": ["Germany"],
+  "countryStats": [
+    {
+      "code": "DE",
+      "name": "Germany",
+      "firstShownAt": "2024-03-14T00:00:00.000Z",
+      "lastShownAt": "2025-09-22T00:00:00.000Z",
+      "impressions": {
+        "lowerBound": "500000",
+        "upperBound": "600000"
+      },
+      "platformStats": [
+        {
+          "name": "YouTube",
+          "code": "YOUTUBE",
+          "impressions": {
+            "lowerBound": "8000",
+            "upperBound": "9000"
+          }
+        },
+        {
+          "name": "Google Shopping",
+          "code": "SHOPPING",
+          "impressions": {
+            "lowerBound": "3000",
+            "upperBound": "4000"
+          }
+        },
+        {
+          "name": "Google Search",
+          "code": "SEARCH",
+          "impressions": {
+            "lowerBound": "450000",
+            "upperBound": "500000"
+          }
+        }
+      ]
+    }
+  ],
+  "audienceSelections": [
+    {
+      "name": "Demographic info",
+      "hasIncludedCriteria": true,
+      "hasExcludedCriteria": false
+    },
+    {
+      "name": "Geographic locations",
+      "hasIncludedCriteria": true,
+      "hasExcludedCriteria": true
+    },
+    {
+      "name": "Contextual signals",
+      "hasIncludedCriteria": true,
+      "hasExcludedCriteria": true
+    }
+  ],
+  "variants": [
+    {
+      "textContent": "Handykette mit Leopardemuster | My Jewellery - My Jewellery - Bigshopper",
+      "images": [
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT5cZ5keol3Qh0OGy8BxONGNpoc9OeRl771pz5cN4FnyOwhmGU"
+      ],
+      "imageStoreKeys": ["CR08100116008800354305_v0_0.jpg"]
+    }
+  ],
+  "originUrl": "https://adstransparency.google.com/advertiser/AR10303883279069085697?region=DE&platform=YOUTUBE&start-date=2022-01-01&end-date=2024-12-31&format=IMAGE"
+}
+```
 
-### 3. Can I use it as a Google Ads Transparency Center Scraper?
+## How many Google Ads can the Google Ads Scraper extract?
 
-Yes! It extracts full transparency data.
+The Google Ad Transparency Center Scraper uses pagination to extract all job listings from Google Ad Transparency Center. You can control the number of job listings to scrape by setting the `maxItems` input parameter. If you don't set the `maxItems` parameter, the scraper will extract all job listings available on the website.
 
-### 4. Does it work like google ads scraper github scripts?
+## Why use the Google Ads Scraper?
 
-Yes, but it's more powerful, stable, and scalable.
+- ⚡️ **Fast** - The scraper is fast and efficient, allowing you to scrape ads in a programmatic way.
+- 🤙 **Easy to use** - The scraper is easy to use and requires no coding knowledge. All you need to do is input the companies you want to scrape and the scraper will do the rest.
+- ☑️ **Well-Maintained** - The scraper is maintained by the Lexis Solutions team, ensuring that it is always up-to-date and working properly.
 
-### 5. Can I export results?
+## FAQ
 
-Yes—CSV, JSON, Excel, or API endpoints.
+- **How to find a company's ads on Google?**
 
-### 6. Is it better than scraping Google Ads with Python?
+To find a company's ads on Google, you can use the Google Ads Transparency Center. This tool allows you to search for ads by advertiser name, domain, or country.
+- **How to search for ads on Google?**
 
-For scale and speed—YES.
+Google Ads Transparency Center allows you to search for ads by advertiser name, domain, or country. You can also filter ads by date range and format. If you need to obtain the data programmatically, you can use the Google Ads Scraper.
+- **What is the Google Ads Transparency Center?**
 
-### 7. Does it support bulk URLs?
+The Google Ads Transparency Center is a website that allows users to view ads that are displayed on Google's advertising network. It also provides information about the advertisers who are running these ads.
+- **What is the Google Ads Scraper?**
 
-Fully supported.
+The Google Ads Scraper is a web scraping tool designed specifically for Google's Ads Transparency Center. This tool offers an effective way to mine valuable data from ads displayed on Google's advertising network.
+- **Is Scraping Google Ads Legal?**
 
-### 8. Can I analyze ad creatives?
+Scraping public information from Google's Ads Transparency Center is legal as long as you are not violating any terms of service or privacy policies. However, it is important to note that scraping ads can be considered a violation of the terms of service of some websites, so it is always best to check before scraping.
+- **How much does it cost?**
 
-Yes—images, text, metadata, and more.
+The cost for using the Google Ads Scraper is shown on the top of this page. You can also check the Apify Store page for more information.
 
-## 🏁 Conclusion
+## Need to scrape ads from Bing?
 
-The Google Ads Scraper is a powerful tool for collecting ad intelligence, transparency data, and competitive insights at scale. 🚀 Whether you're a marketer, researcher, or analyst, it delivers fast, accurate, and structured data—helping you make smarter decisions and stay ahead in the digital advertising landscape.
+👉 Scrape Bing ads with [Bing Ads Scraper](https://apify.com/lexis-solutions/bing-ads-scraper)
+
+## Need to scrape ads from TikTok?
+
+👉 Scrape TikTok ads with [TikTok Ads Scraper](https://apify.com/lexis-solutions/tiktok-ads-scraper)
+
+## Need to scrape ads from Reddit?
+
+👉 Scrape Reddit ads with [Reddit Ads Scraper](https://apify.com/lexis-solutions/reddit-ads-scraper)
+
+---
+
+👀 p.s.
+
+Got feedback or need an extension?
+
+Lexis Solutions is a [certified Apify Partner](https://apify.com/partners/find). We can help you with custom solutions or data extraction projects.
+
+Contact us over [Email](mailto:scraping@lexis.solutions) or [LinkedIn](https://www.linkedin.com/company/lexis-solutions)
+
+## Support Our Work 💝
+
+If you're happy with our work and scrapers, you're welcome to leave us a company review [here](https://apify.com/partners/find/lexis-solutions/review) and leave a review for the scrapers you're subscribed to. It will take you less than a minute but it will mean a lot to us!
+
+Image Credit: Google Transparency Center
